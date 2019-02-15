@@ -134,7 +134,7 @@ suffix_refresh <- function(){
 #' 
 #' @importFrom triebeard trie longest_match
 #' @export
-suffix_extract <- function(domains, suffixes = NULL){
+suffix_extract <- function(domains, suffixes){
   if(!is.null(suffixes)){
     # check if suffixes is a data.frame, and stop if column not found
     if(is.data.frame(suffixes)) {
